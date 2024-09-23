@@ -1,0 +1,169 @@
+.creativeDashboardContainer {
+  display: flex;
+  height: 100dvh;
+  
+  .panelWithCreation {
+    width: calc(100dvw - 35%);
+  }
+
+  >div:first-child {
+    padding: 1rem;
+    height: calc(100dvh - 2rem);
+    overflow: scroll;
+
+    >div:nth-child(2) {
+      margin-top: 1.3rem;
+      display: flex;
+      
+      >div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      >div:last-child {
+        margin-left: 8.3rem;
+      }
+    }
+
+    .progressWrapper {
+      margin: 2.7rem 0rem;
+
+      >progress {
+        border: 1px solid black;
+        border-radius: 9px;
+        background-color: white;
+        width: calc(300px + 8.7rem);
+      }
+
+      >label {
+        font-size: 0.9rem;
+        margin-left: 0.7rem;
+      }
+
+      >progress::-webkit-progress-bar {
+        background-color: black;
+      }
+      
+      /* For Firefox */
+      >progress::-moz-progress-bar {
+        background-color: black;
+      }
+      
+      /* For Internet Explorer / Edge */
+      >progress::-ms-fill {
+        background-color: black;
+      }
+    }
+  }
+
+  >div:nth-child(2) {
+    width: 35%;
+  }
+}
+
+.headerTxt {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.subHeaderTxt {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.inputWrapper {
+  border: 1px solid black;
+  outline: none !important;
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.btnWrapper {
+  padding: 0.3rem 2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid black;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.disableBtnWrapper {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.colorPaleteWrapper {
+  display: flex;
+  gap: 1rem;
+  width: calc(60px + (1rem * 3));
+  flex-wrap: wrap;
+
+  >div {
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .activeColor {
+    border: 2px solid orange;
+  }
+}
+
+.creationWrapper {
+  padding: 1rem 2.3rem;
+  position: relative;
+  height: 100%;
+  border-left: 1px solid black;
+
+  >div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  >div:nth-child(2),
+  >div:nth-child(3),
+  >div:nth-child(4) {
+    >span {
+      display: block;
+      margin: 1rem 0rem;
+    }
+
+    >input {
+      width: 100%;
+    }
+  }
+
+  >button:last-child {
+    position: absolute;
+    bottom: 5rem;
+  }
+  
+}
+
+.creativesContainer {
+  width: fit-content;
+  margin-top: 1.7rem;
+
+  >div {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 350px;
+    margin-bottom: 1.7rem;
+
+    >span {
+      display: block;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.disabledFilter {
+  opacity: 0.5;
+  pointer-events: none;
+}
